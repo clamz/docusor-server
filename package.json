@@ -1,0 +1,21 @@
+{
+  "name": "docview-server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "publishheroku": "cd ../ && git subtree push --prefix server heroku-server master || true",
+    "serve": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "htmlencode": "0.0.4",
+    "lodash": "^4.17.11",
+    "restify": "^7.2.1",
+    "showdown": "^1.8.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
