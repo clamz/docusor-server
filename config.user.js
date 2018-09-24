@@ -1,4 +1,4 @@
 const path = require('path')
 module.exports = {
-	path: path.join(__dirname,'../docs/')
+	path: path.join(__dirname,'./docs/')
 }
