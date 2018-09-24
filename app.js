@@ -43,6 +43,6 @@ server.get('/doc/*', function(req, res, next) {
 	next();
 });
 
-server.listen(3010, function () {
+server.listen(process.env.PORT ||3010, function () {
 	console.log('%s listening at %s', server.name, server.url);
 });
